@@ -2,7 +2,7 @@ import {
     galleryItems
 } from './gallery-items.js';
 
-console.log(galleryItems);
+// console.log(galleryItems);
 
 const element = document.querySelector(".gallery");
 
@@ -12,10 +12,10 @@ const galleryElement = galleryItems
         original,
         description
     }) => {
-        return `<a class="gallery__item"="${original}">
+        return `<a class="gallery__item" href="${original}">
     <img class="gallery__image" 
     src="${preview}" 
-    alt="${description}"/>
+    alt="${description}" />
     </a>`;
     })
     .join("");
